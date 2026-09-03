@@ -9,16 +9,16 @@ import torch
 import torch.nn as nn
 from huggingface_hub import PyTorchModelHubMixin
 
-from vggt.models.aggregator import Aggregator
-from vggt.heads.camera_head import CameraHead
-from vggt.heads.dpt_head import DPTHead
-from vggt.heads.track_head import TrackHead
-from vggt.heads.albedo_dpt_head import AlbedoDPTHead
+from mvid.models.aggregator import Aggregator
+from mvid.heads.camera_head import CameraHead
+from mvid.heads.dpt_head import DPTHead
+from mvid.heads.track_head import TrackHead
+from mvid.heads.albedo_dpt_head import AlbedoDPTHead
 
-from vggt.models.adapter import MultiLayerDenseBranchAdapter
+from mvid.models.adapter import MultiLayerDenseBranchAdapter
 
 
-class VGGT(nn.Module, PyTorchModelHubMixin):
+class MVID(nn.Module, PyTorchModelHubMixin):
     def __init__(
         self,
         img_size=518,
