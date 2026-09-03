@@ -32,6 +32,12 @@ holds albedo steady between viewpoints — the standard failure of per-image
 methods is that one wall comes out a different colour in every frame, which
 makes the output useless for anything downstream that spans views.
 
+<div align="center">
+
+![Stable albedo across views: MVID vs a single-view baseline](assets/f1_single.gif)
+
+</div>
+
 **R is predicted, not subtracted.** Defining the residual as `I − A·S` turns it
 into an error bucket that quietly absorbs every mistake in A and S. Here it is a
 head with its own supervision, so a highlight leaves the albedo instead of being
