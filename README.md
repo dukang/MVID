@@ -4,7 +4,7 @@
 
 **Multi-view intrinsic decomposition — albedo, shading and the non-diffuse residual, in one pass over all views**
 
-<a href="https://huggingface.co/spaces/dukang92/MVID-Demo"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue" alt="HF Space"></a>
+<a href="https://dukang92-mvid-demo.hf.space"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue" alt="HF Space"></a>
 
 ![MVID decomposing a synthetic interior and a hand-held bathroom photo](assets/teaser.jpg)
 
