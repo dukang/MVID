@@ -4,7 +4,10 @@
 
 **Multi-view intrinsic decomposition — albedo, shading and the non-diffuse residual, in one pass over all views**
 
+<a href="https://arxiv.org/abs/2512.23667"><img src="https://img.shields.io/badge/arXiv-2512.23667-b31b1b" alt="arXiv"></a>
 <a href="https://dukang92-mvid-demo.hf.space"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue" alt="HF Space"></a>
+
+**SIGGRAPH Asia 2026 (Conference Papers)**
 
 ![MVID decomposing a synthetic interior and a hand-held bathroom photo](assets/teaser.jpg)
 
