@@ -13,6 +13,18 @@
 
 </div>
 
+## In progress
+
+- [x] Inference code
+- [x] Interactive demo — [try it](https://dukang92-mvid-demo.hf.space)
+- [ ] Pretrained weights
+- [ ] VGGT-Ω backbone variant
+
+**Weights** are not released yet; the demo runs the current checkpoint in the
+meantime. **The VGGT-Ω variant** keeps the same `I = A · S + R` contract and the
+same heads, so it swaps the aggregator rather than being a different model, and
+it will ship alongside the VGGT-based one rather than replacing it.
+
 ## What it does
 
 MVID takes several views of one scene and splits every pixel of every view into
@@ -50,21 +62,6 @@ between views, diffuse content agrees and speculars do not.
 `S` and `R` are HDR, which is what makes relighting possible downstream:
 substituting a new `S′` and rescaling `R` re-lights the scene without touching
 the albedo.
-
-## In progress
-
-This repository currently holds inference code only. Two things are on the way,
-and this section will be updated as they land.
-
-- **Pretrained weights.** Not released yet. The
-  [demo](https://dukang92-mvid-demo.hf.space) runs the current checkpoint, so it
-  is the way to try the model in the meantime.
-
-- **VGGT-Ω backbone.** The code here builds on VGGT. A variant on
-  [VGGT-Ω](https://github.com/facebookresearch/vggt-omega) is in training. It
-  keeps the same `I = A · S + R` contract and the same heads, so it is a drop-in
-  swap of the aggregator rather than a different model, and it will ship
-  alongside the VGGT-based one rather than replacing it.
 
 ## Acknowledgements
 
